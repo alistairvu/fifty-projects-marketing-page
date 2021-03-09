@@ -1,0 +1,6 @@
+.jumbotron {
+  background-image: url(/oec-cover.jpg);
+  background-size: cover;
+  height: 50vh;
+  background-position: 0% 40%;
+}

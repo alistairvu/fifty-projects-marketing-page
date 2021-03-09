@@ -1,0 +1,44 @@
+[
+  {
+    "id": 6,
+    "name": "Kim Lip",
+    "birthName": "Kim Jungeun",
+    "birthDate": "February 10th, 1999",
+    "image": "/oec-kim-lip.jpg",
+    "animal": "Owl",
+    "color": "Red",
+    "colorHex": "#d90011",
+    "position": "Leader, Main Vocalist, Main Dancer",
+    "solo": "Eclipse",
+    "soloLink": "https://www.youtube.com/watch?v=_qJEoSa3Ie0",
+    "slug": "kim-lip"
+  },
+  {
+    "id": 7,
+    "name": "Jinsoul",
+    "birthName": "Jung Jinsoul",
+    "birthDate": "June 13th, 1997",
+    "image": "/oec-jinsoul.jpg",
+    "animal": "Betta fish",
+    "color": "Royal blue",
+    "colorHex": "#0801d5",
+    "position": "Main Rapper, Lead Vocalist, Visual",
+    "solo": "Singing In The Rain",
+    "soloLink": "https://www.youtube.com/watch?v=RWeyOyY_puQ",
+    "slug": "jinsoul"
+  },
+  {
+    "id": 8,
+    "name": "Choerry",
+    "birthName": "Choi Yerim",
+    "birthDate": "June 4th, 2001",
+    "image": "/oec-choerry.jpg",
+    "animal": "Fruit bat",
+    "color": "Purple",
+    "colorHex": "#ba01de",
+    "position": "Lead Rapper, Lead Dancer, Vocalist, Center, Maknae",
+    "solo": "Love Cherry Motion",
+    "soloLink": "https://www.youtube.com/watch?v=VBbeuXW8Nko",
+    "slug": "choerry"
+  }
+]

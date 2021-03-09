@@ -1,0 +1,5 @@
+.cardImage {
+  object-fit: cover;
+  object-position: 0% 35%;
+  height: 200px;
+}

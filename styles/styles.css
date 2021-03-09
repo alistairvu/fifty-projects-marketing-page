@@ -1,0 +1,29 @@
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 1, 213, 1) 0%,
+    rgba(186, 1, 222, 1) 50%,
+    rgba(217, 0, 17, 1) 100%
+  );
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.semibold-text {
+  font-weight: 600;
+}
+
+.p-text {
+  font-size: 20px;
+}
+
+p {
+  padding: 0;
+}
