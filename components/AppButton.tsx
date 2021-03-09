@@ -6,6 +6,7 @@ interface AppButtonProps {
   title: string
   gradient?: boolean
   submit?: boolean
+  disabled?: boolean
 }
 
 export const AppButton = ({
@@ -14,6 +15,7 @@ export const AppButton = ({
   title,
   gradient,
   submit,
+  disabled,
 }: AppButtonProps) => {
   return (
     <Button
@@ -22,6 +24,7 @@ export const AppButton = ({
       variant="dark"
       onClick={onClick}
       type={submit && "submit"}
+      disabled={disabled}
     >
       {title}
     </Button>

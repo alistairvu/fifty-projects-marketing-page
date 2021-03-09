@@ -1,8 +1,11 @@
 import { Formik } from "formik"
 import Form from "react-bootstrap/Form"
 import Card from "react-bootstrap/Card"
+import Alert from "react-bootstrap/Alert"
 import * as yup from "yup"
 import { AppButton } from "."
+import axios from "axios"
+import { useState } from "react"
 
 const schema = yup.object().shape({
   name: yup.string().required(),
@@ -10,12 +13,32 @@ const schema = yup.object().shape({
 })
 
 export const AppForm = () => {
-  const submitHandler = (values: any) => {
-    console.log(values)
+  const [sending, setSending] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(false)
+
+  const submitHandler = async (values: any) => {
+    setSending(true)
+    setError(false)
+    setSuccess(false)
+    try {
+      const data = await axios.post("/api/member", values)
+      if (data) {
+        setSuccess(true)
+      } else {
+        setError(true)
+      }
+    } catch (err) {
+      setError(true)
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
     <Card className="px-3 text-left col-md-6 offset-md-3 py-3">
+      {success && <Alert variant="success">Registration successful!</Alert>}
+      {error && <Alert variant="danger">An error occurred...</Alert>}
       <Formik
         validationSchema={schema}
         onSubmit={submitHandler}
@@ -60,7 +83,12 @@ export const AppForm = () => {
             </Form.Group>
 
             <div className="text-center">
-              <AppButton title="Sign me up!" gradient submit />
+              <AppButton
+                title={sending ? "Signing you up..." : "Sign me up!"}
+                disabled={sending}
+                gradient
+                submit
+              />
             </div>
           </Form>
         )}
