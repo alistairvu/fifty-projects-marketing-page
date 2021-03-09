@@ -21,6 +21,7 @@ export const AppMembersCard = (props: AppMembersCardProps) => {
           variant="top"
           src={props.image}
           className={styles.cardImage}
+          alt={props.name}
         />
         <Card.Body>
           <Card.Title

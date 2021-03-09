@@ -1,13 +1,6 @@
 import Head from "next/head"
 import Container from "react-bootstrap/Container"
-import {
-  AppButton,
-  AppHero,
-  AppMembers,
-  AppVideos,
-  AppCallToAction,
-} from "../components"
-import Link from "next/link"
+import { AppHero, AppMembers, AppVideos, AppCallToAction } from "../components"
 
 const Home = () => {
   return (
@@ -15,6 +8,10 @@ const Home = () => {
       <Head>
         <title>ODD EYE CIRCLE</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Introduction to LOONA/ODD EYE CIRCLE - A legendary subunit."
+        />
       </Head>
 
       <AppHero />

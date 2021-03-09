@@ -5,6 +5,7 @@ interface AppButtonProps {
   color?: string
   title: string
   gradient?: boolean
+  submit?: boolean
 }
 
 export const AppButton = ({
@@ -12,13 +13,15 @@ export const AppButton = ({
   onClick,
   title,
   gradient,
+  submit,
 }: AppButtonProps) => {
   return (
     <Button
-      className={gradient ? "gradient bold-text" : "bold-text"}
+      className={gradient ? "gradient" : ""}
       style={{ backgroundColor: color, border: "none" }}
       variant="dark"
       onClick={onClick}
+      type={submit && "submit"}
     >
       {title}
     </Button>

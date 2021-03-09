@@ -31,6 +31,10 @@ const Member = (props: MemberProps) => {
       <Head>
         <title>ODD EYE CIRCLE | {props.name}</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content={`Introduction to ${props.name} – A member of LOONA/ODD EYE CIRCLE.`}
+        />
       </Head>
 
       <Container className="py-3">
@@ -39,7 +43,7 @@ const Member = (props: MemberProps) => {
         </Container>
         <Row>
           <Col sm={4}>
-            <img src={props.image} width="100%" />
+            <img src={props.image} width="100%" alt={props.name} />
           </Col>
           <Col sm={8}>
             <h1
