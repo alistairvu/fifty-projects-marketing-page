@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { AppButton, AppCallToAction } from "../../components"
 import { useRouter } from "next/router"
-import ReactPlayer from "react-player"
 import Head from "next/head"
 
 interface MemberProps {
@@ -30,7 +29,7 @@ const Member = (props: MemberProps) => {
     <>
       <Head>
         <title>ODD EYE CIRCLE | {props.name}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/oec-favicon.ico" />
         <meta
           name="description"
           content={`Introduction to ${props.name} – A member of LOONA/ODD EYE CIRCLE.`}
@@ -63,7 +62,7 @@ const Member = (props: MemberProps) => {
             <h2 className="bold-text text-center">
               Watch her solo music video
             </h2>
-            <ReactPlayer url={props.soloLink} width="100%" />
+            <iframe src={props.soloLink} width="100%" height="360px" />
             <AppCallToAction />
           </Col>
         </Row>

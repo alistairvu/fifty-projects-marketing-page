@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import ReactPlayer from "react-player"
 
 export const AppVideos = () => {
   return (
@@ -13,17 +12,19 @@ export const AppVideos = () => {
       <Row className="pt-3">
         <Col sm={6}>
           <h3 className="semibold-text">Girl Front</h3>
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=tyInv6RWL0Q"
+          <iframe
             width="100%"
+            height="320"
+            src="https://www.youtube.com/embed/tyInv6RWL0Q?controls=0"
           />
         </Col>
 
         <Col sm={6}>
           <h3 className="semibold-text">Sweet Crazy Love</h3>
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=cG7FkoNKBzI"
+          <iframe
             width="100%"
+            height="320"
+            src="https://www.youtube.com/embed/cG7FkoNKBzI?controls=0"
           />
         </Col>
       </Row>

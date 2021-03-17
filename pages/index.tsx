@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <Head>
         <title>ODD EYE CIRCLE</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/oec-favicon.ico" />
         <meta
           name="description"
           content="Introduction to LOONA/ODD EYE CIRCLE - A legendary subunit."

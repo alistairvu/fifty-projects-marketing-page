@@ -10,7 +10,7 @@
     "colorHex": "#d90011",
     "position": "Leader, Main Vocalist, Main Dancer",
     "solo": "Eclipse",
-    "soloLink": "https://www.youtube.com/watch?v=_qJEoSa3Ie0",
+    "soloLink": "https://www.youtube.com/embed/_qJEoSa3Ie0?controls=0",
     "slug": "kim-lip"
   },
   {
@@ -24,7 +24,7 @@
     "colorHex": "#0801d5",
     "position": "Main Rapper, Lead Vocalist, Visual",
     "solo": "Singing In The Rain",
-    "soloLink": "https://www.youtube.com/watch?v=RWeyOyY_puQ",
+    "soloLink": "https://www.youtube.com/embed/RWeyOyY_puQ?controls=0",
     "slug": "jinsoul"
   },
   {
@@ -38,7 +38,7 @@
     "colorHex": "#ba01de",
     "position": "Lead Rapper, Lead Dancer, Vocalist, Center, Maknae",
     "solo": "Love Cherry Motion",
-    "soloLink": "https://www.youtube.com/watch?v=VBbeuXW8Nko",
+    "soloLink": "https://www.youtube.com/embed/VBbeuXW8Nko?controls=0",
     "slug": "choerry"
   }
 ]

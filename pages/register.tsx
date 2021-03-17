@@ -7,7 +7,7 @@ const Register = () => {
     <>
       <Head>
         <title>ODD EYE CIRCLE | Register</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/oec-favicon.ico" />
         <meta
           name="description"
           content="Register for the LOONA/ODD EYE CIRCLE fanclub!"
