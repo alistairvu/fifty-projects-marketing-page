@@ -21,7 +21,7 @@ export const AppHeader = () => {
           <>
             <Navbar.Toggle />
             <Navbar.Collapse>
-              <Nav className="ml-auto">
+              <Nav className="ms-auto">
                 <Link href="/register" passHref>
                   <Nav.Link className="gradient gradient-text">
                     Join the Fanclub!

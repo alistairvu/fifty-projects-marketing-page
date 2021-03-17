@@ -1,10 +1,18 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+$oec-red: #d90011;
+$oec-blue: #0801d5;
+$oec-purple: #ba01de;
+
+$oec-gradient: linear-gradient(
+  90deg,
+  $oec-blue 0%,
+  $oec-purple 50%,
+  $oec-red 100%
+);
+
 .gradient {
-  background: linear-gradient(
-    90deg,
-    rgba(8, 1, 213, 1) 0%,
-    rgba(186, 1, 222, 1) 50%,
-    rgba(217, 0, 17, 1) 100%
-  );
+  background: $oec-gradient;
 }
 
 .gradient-text {
@@ -34,12 +42,7 @@ p {
 }
 
 #nprogress .bar {
-  background: linear-gradient(
-    90deg,
-    rgba(8, 1, 213, 1) 0%,
-    rgba(186, 1, 222, 1) 50%,
-    rgba(217, 0, 17, 1) 100%
-  );
+  background: $oec-gradient;
 
   position: fixed;
   z-index: 1031;

@@ -2,7 +2,7 @@ import Link from "next/link"
 import Card from "react-bootstrap/Card"
 import Col from "react-bootstrap/Col"
 import { AppButton } from "."
-import styles from "./styles/AppMembersCard.module.css"
+import styles from "./styles/AppMembersCard.module.scss"
 
 interface AppMembersCardProps {
   id: number

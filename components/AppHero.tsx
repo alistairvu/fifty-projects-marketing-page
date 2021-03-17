@@ -1,13 +1,12 @@
-import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container"
-import styles from "./styles/AppHero.module.css"
+import styles from "./styles/AppHero.module.scss"
 
 export const AppHero = () => {
   return (
     <>
-      <Jumbotron fluid className={styles.jumbotron} />
+      <section className={styles.jumbotron} />
 
-      <Container className="text-center pb-2">
+      <Container className="text-center pb-2 mt-3">
         <h1 className="gradient gradient-text bold-text">
           Iconic. Groundbreaking. Legendary.
         </h1>
